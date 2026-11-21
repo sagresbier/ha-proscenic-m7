@@ -1,0 +1,14 @@
+{
+  "domain": "proscenic_m7",
+  "name": "Proscenic M7 Pro",
+  "codeowners": [
+    "@sagresbier"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/sagresbier/ha-proscenic-m7",
+  "integration_type": "device",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/sagresbier/ha-proscenic-m7/issues",
+  "requirements": [],
+  "version": "0.2.0"
+}

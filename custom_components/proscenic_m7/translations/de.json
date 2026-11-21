@@ -1,0 +1,96 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Proscenic M7 Pro",
+        "description": "Benutzername (E-Mail) und Seriennummer wie in der Proscenic-Home-App.",
+        "data": {
+          "username": "Benutzername (E-Mail)",
+          "serial": "Seriennummer"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Benutzername wird von der Cloud nicht akzeptiert",
+      "invalid_serial": "Kein Server für diese Seriennummer",
+      "cannot_connect": "Proscenic-Cloud nicht erreichbar",
+      "unknown": "Unerwarteter Fehler"
+    },
+    "abort": {
+      "already_configured": "Dieser Roboter ist bereits eingerichtet"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Status",
+        "state": {
+          "cleaning": "Saugt",
+          "returning": "Fährt zur Station",
+          "paused": "Pausiert",
+          "charging": "Lädt",
+          "charged": "Voll geladen",
+          "idle": "Bereit",
+          "dormant": "Ruhezustand",
+          "error": "Fehler",
+          "unknown": "Unbekannt"
+        }
+      },
+      "battery": {
+        "name": "Akku"
+      },
+      "cleaned_area": {
+        "name": "Gereinigte Fläche"
+      },
+      "clean_time": {
+        "name": "Reinigungszeit"
+      },
+      "total_area": {
+        "name": "Gesamtfläche"
+      },
+      "total_time": {
+        "name": "Gesamtzeit"
+      },
+      "error": {
+        "name": "Fehler",
+        "state": {
+          "none": "Kein Fehler",
+          "side_brush": "Seitenbürste prüfen",
+          "main_brush": "Hauptbürste prüfen",
+          "main_wheel": "Hauptrad prüfen",
+          "charging_stand": "Ladestation prüfen",
+          "other": "Anderer Fehler"
+        }
+      }
+    },
+    "binary_sensor": {
+      "problem": {
+        "name": "Problem"
+      },
+      "robot_online": {
+        "name": "Roboter online"
+      }
+    },
+    "vacuum": {
+      "robot": {
+        "state_attributes": {
+          "fan_speed": {
+            "state": {
+              "quiet": "Leise",
+              "standard": "Standard",
+              "powerful": "Stark"
+            }
+          }
+        }
+      }
+    },
+    "button": {
+      "deep_clean": {
+        "name": "Tiefenreinigung"
+      },
+      "empty_dust": {
+        "name": "Behälter leeren"
+      }
+    }
+  }
+}

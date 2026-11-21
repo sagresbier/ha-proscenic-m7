@@ -1,0 +1,96 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Proscenic M7 Pro",
+        "description": "Benutzername (E-Mail) und Seriennummer wie in der Proscenic-Home-App.",
+        "data": {
+          "username": "Username (e-mail)",
+          "serial": "Serial number"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Username not accepted by the cloud",
+      "invalid_serial": "No server for this serial number",
+      "cannot_connect": "Cannot reach the Proscenic cloud",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This robot is already configured"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Status",
+        "state": {
+          "cleaning": "Cleaning",
+          "returning": "Returning to dock",
+          "paused": "Paused",
+          "charging": "Charging",
+          "charged": "Fully charged",
+          "idle": "Idle",
+          "dormant": "Dormant",
+          "error": "Error",
+          "unknown": "Unknown"
+        }
+      },
+      "battery": {
+        "name": "Battery"
+      },
+      "cleaned_area": {
+        "name": "Cleaned area"
+      },
+      "clean_time": {
+        "name": "Cleaning time"
+      },
+      "total_area": {
+        "name": "Total cleaned area"
+      },
+      "total_time": {
+        "name": "Total cleaning time"
+      },
+      "error": {
+        "name": "Error",
+        "state": {
+          "none": "No error",
+          "side_brush": "Check side brush",
+          "main_brush": "Check main brush",
+          "main_wheel": "Check main wheel",
+          "charging_stand": "Check charging dock",
+          "other": "Other error"
+        }
+      }
+    },
+    "binary_sensor": {
+      "problem": {
+        "name": "Problem"
+      },
+      "robot_online": {
+        "name": "Robot online"
+      }
+    },
+    "vacuum": {
+      "robot": {
+        "state_attributes": {
+          "fan_speed": {
+            "state": {
+              "quiet": "Quiet",
+              "standard": "Standard",
+              "powerful": "Powerful"
+            }
+          }
+        }
+      }
+    },
+    "button": {
+      "deep_clean": {
+        "name": "Deep clean"
+      },
+      "empty_dust": {
+        "name": "Empty dust bin"
+      }
+    }
+  }
+}
