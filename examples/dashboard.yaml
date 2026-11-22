@@ -1,0 +1,48 @@
+# Example dashboard card for the Proscenic M7 Pro integration.
+# Uses only built-in Home Assistant cards (no HACS frontend cards needed).
+#
+# Replace DEVICE with the name part of your entity IDs. Example: if your
+# vacuum is "vacuum.living_room_robot", DEVICE is "living_room_robot".
+# Check Settings -> Devices & services -> Proscenic M7 Pro -> Entities.
+# Entity names differ per language; adjust the sensor/button IDs if needed.
+#
+# Usage: Dashboard -> Edit -> Add card -> Manual, then paste everything below.
+
+type: vertical-stack
+cards:
+  - type: tile
+    entity: vacuum.DEVICE
+    name: Robot vacuum
+    state_content:
+      - state
+      - battery_level
+    features:
+      - type: vacuum-commands
+        commands:
+          - start_pause
+          - return_home
+  - type: entities
+    show_header_toggle: false
+    entities:
+      - entity: sensor.DEVICE_status
+      - entity: sensor.DEVICE_battery
+      - entity: sensor.DEVICE_cleaned_area
+      - entity: sensor.DEVICE_cleaning_time
+      - entity: sensor.DEVICE_total_area
+      - entity: sensor.DEVICE_total_time
+      - entity: sensor.DEVICE_error
+      - entity: binary_sensor.DEVICE_problem
+  - type: horizontal-stack
+    cards:
+      - type: button
+        entity: button.DEVICE_deep_clean
+        name: Deep clean
+        icon: mdi:broom
+        tap_action:
+          action: toggle
+      - type: button
+        entity: button.DEVICE_empty_dust_bin
+        name: Empty dust bin
+        icon: mdi:delete-empty
+        tap_action:
+          action: toggle

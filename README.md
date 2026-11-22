@@ -44,6 +44,12 @@ Then add the integration under *Settings → Devices & services → Add integrat
 - Entity IDs depend on your device name, area and the entity naming settings of your Home Assistant version.
 - This is based on the observed behavior of the app. If the cloud changes, the integration may stop working.
 
+## Dashboard example
+
+A ready-to-paste card that only uses built-in Home Assistant cards is in
+[`examples/dashboard.yaml`](examples/dashboard.yaml). Replace `DEVICE` with the name part of your
+entity IDs and adjust the sensor names if your Home Assistant uses another language.
+
 ## Tests
 
 The tests use a simulated cloud and run in the Home Assistant test framework:
