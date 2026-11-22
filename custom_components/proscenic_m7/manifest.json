@@ -1,10 +1,12 @@
 {
   "domain": "proscenic_m7",
   "name": "Proscenic M7 Pro",
+  "categories": [
+    "appliances_cleaning.cleaning"
+  ],
   "codeowners": [
     "@sagresbier"
   ],
-  "categories": ["appliances_cleaning.cleaning"],
   "config_flow": true,
   "documentation": "https://github.com/sagresbier/ha-proscenic-m7",
   "integration_type": "device",
