@@ -1,9 +1,6 @@
 {
   "domain": "proscenic_m7",
   "name": "Proscenic M7 Pro",
-  "categories": [
-    "appliances_cleaning.cleaning"
-  ],
   "codeowners": [
     "@sagresbier"
   ],
