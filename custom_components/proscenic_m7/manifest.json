@@ -4,6 +4,7 @@
   "codeowners": [
     "@sagresbier"
   ],
+  "categories": ["appliances_cleaning.cleaning"],
   "config_flow": true,
   "documentation": "https://github.com/sagresbier/ha-proscenic-m7",
   "integration_type": "device",
